@@ -1,21 +1,27 @@
 console.log('hello friend')
+
+let element = document.getElementById("counter")
+
 let count = 0;
+
 let increase = ()=>{
     count++;
     element.innerText = count;
-}
-
-let decrease = ()=>{
+    console.log("increase", count);
+  }
+  
+  let decrease = ()=>{
     count--;
     element.innerText = count;
-}
-
-let reset = ()=>{
+    console.log("decrease", count);
+  }
+  
+  let reset = ()=>{
     count = 0;
     element.innerHTML = `<mark>${count}</mark>`;
+    console.log("reset", count);
 }
 
-let element = document.getElementById("counter")
 
 
 let selectTheme = (theme)=>{
